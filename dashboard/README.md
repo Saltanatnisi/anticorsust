@@ -1,5 +1,7 @@
 # Дашборд ИАУ — прототип
 
+🚀 **Живая демо-версия:** https://iau-dashboard-kg.netlify.app
+
 Веб-приложение дашборда Индекса антикоррупционной устойчивости Кыргызской Республики (ИАУ), реализованное на основе методического пособия НИСИ при Президенте КР (2026) и реестра из 57 статистических индикаторов (см. `../docs/DASHBOARD_PLAN.md` и `../docs/INDICATORS_REGISTRY.md`).
 
 ## ⚠ Статус данных
@@ -54,6 +56,16 @@ npm run dev      # http://localhost:3000
 npm run build
 npm run start
 ```
+
+## Деплой на Netlify
+
+Проект настроен для деплоя на Netlify (`netlify.toml` + `@netlify/plugin-nextjs`, полностью поддерживает SSR/динамические маршруты Next.js через Netlify Functions). Деплой выполняется командой:
+
+```bash
+npx netlify deploy --build --prod
+```
+
+Текущий сайт: **iau-dashboard-kg** (https://iau-dashboard-kg.netlify.app), команда `saltanat-omuralieva2020`. Админ-панель: https://app.netlify.com/projects/iau-dashboard-kg.
 
 ## Реализованные модули (соответствие гл. 7.6 методики)
 
